@@ -1,3 +1,9 @@
+/*
+Opmaak voor WebMarkup
+Jolle (644546)
+*/
+
+/* Standaard Browser troep weg. */
 * {
     margin: 0;
     padding: 0;
@@ -5,3 +11,57 @@
     font-family: Arial, sans-serif;
 }
 
+/* Dit doe ik zelf, dus wegwezen standaard opmaak */
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+/* De eerste Kleurtjes */
+body {
+    width: 100%;
+    background-color: #000850;
+    color: #fff;
+}
+
+/* Navigatie */
+nav {
+    width: 100%;
+    background-color: #000c9a;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
+nav ul li {
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0;
+    width: 19%;
+}
+nav ul li:hover {
+    background-color: #0010dd;
+}
+
+/* Header */
+body header {
+    width: 100%;
+    height: 500px; /* fixed height voor de video */
+    text-align: center;
+    background-color: #0010dd;
+}
+body header section {
+    padding: 200px 0; /* Vertically align */
+}
+body header h1 {
+    font-size: 6vw;
+}
+body header h2 {
+    font-size: 2.5vw;
+}
+
+/* Footer */
+body footer {
+    background-color: #000520;
+}
