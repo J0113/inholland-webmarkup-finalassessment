@@ -52,6 +52,7 @@ nav ul li:hover {
     background-color: #0010dd;
     padding: 15% 0;
 }
+#thuis h1 {
     font-size: 6vw;
     /*TODO: vervangen voor %*/
 }
