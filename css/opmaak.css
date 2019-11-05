@@ -111,3 +111,30 @@ article footer {
     font-size: 90%;
     clear: both;
 }
+article section.imgholder img{
+    width: 100%;
+    display: block;
+}
+
+
+/* COOKIES: JS is dus niet toegestaan, daarom deze CSS trucage :). */
+#cookie input#cookieaccept {
+    display: none;
+}
+#cookie input:checked + label{
+    display: none;
+}
+#cookie label {
+    width: 100%;
+    background-color: #000c9a;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    z-index: 100;
+    padding: 10% 0;
+}
+#cookie label u {
+    display: block;
+    margin: 1%;
+}
