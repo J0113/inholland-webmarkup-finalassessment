@@ -115,7 +115,12 @@ article section.imgholder img{
     width: 100%;
     display: block;
 }
-
+article a {
+    text-decoration: underline;
+}
+article a:hover {
+    text-decoration: none;
+}
 
 /* COOKIES: JS is dus niet toegestaan, daarom deze CSS trucage :). */
 #cookie input#cookieaccept {
