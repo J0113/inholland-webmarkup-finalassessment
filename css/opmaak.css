@@ -12,6 +12,11 @@ Jolle (644546)
     font-family: Arial, sans-serif;
 }
 
+/* Dit ziet er gewoon beter uit */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Dit doe ik zelf, dus wegwezen standaard opmaak */
 a {
     color: inherit;
@@ -120,6 +125,55 @@ article a {
 }
 article a:hover {
     text-decoration: none;
+}
+
+/* Grid Sportclubs */
+article section#sportclubs {
+    display: grid;
+    grid-template-columns: 33% 33% auto;
+}
+article section#sportclubs > section {
+    margin: 40% 0 0 0;
+}
+article section#sportclubs > aside {
+    width: 90%;
+}
+article section#sportclubs > aside:nth-of-type(2n+1) {
+    grid-column-start: 1;
+    grid-column-end: 3
+}
+article section#sportclubs > section:nth-of-type(2n+1) {
+    grid-column-start: 3;
+}
+article section#sportclubs > aside:nth-of-type(2n+0) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+article section#sportclubs > section:nth-of-type(2n+0) {
+     grid-column-start: 1;
+}
+
+/* The Contact Form */
+article section.formfields {
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+article section.field input,textarea {
+    width: 100%;
+    padding: 1%;
+    border-bottom: solid lightgrey;
+    background-color: inherit;
+    color: white;
+    resize: none;
+}
+article section.field input:focus,textarea:focus {
+    border-bottom: solid white;
+}
+article section.field input[type=submit] {
+    border: solid lightgrey;
+}
+article section.field input[type=submit]:hover {
+    background-color: rgba(255, 255, 255, 0.15);
 }
 
 /* COOKIES: JS is dus niet toegestaan, daarom deze CSS trucage :). */
