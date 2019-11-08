@@ -25,16 +25,18 @@ a {
 
 /* De eerste Kleurtjes */
 body {
-    width: 100%;
-    background-color: #000850;
-    color: #fff;
+    background-color: #F5F5F5;
+    color: #444444;
+}
+h1,h2,h3,h4,h5 {
+    color: #000000;
 }
 
 /* Navigatie */
 nav {
     width: 100%;
-    background-color: #000c9a;
-    color: #fff;
+    background-color: #2699FB;
+    color: #FFFFFF;
     position: fixed;
     bottom: 0;
     text-align: center;
@@ -47,7 +49,7 @@ nav ul li {
     width: 19%;
 }
 nav ul li:hover {
-    background-color: #0010dd;
+    background-color: #AAAAAA;
 }
 
 /* Header */
@@ -67,9 +69,10 @@ nav ul li:hover {
 
 /* Footer */
 #footer {
-    background-color: #000520;
+    background-color: #444444;
     display: flex;
     padding: 3% 3% 10% 3%;
+    color: #FFFFFF;
 }
 #footer section {
     flex-grow: 1;
@@ -86,13 +89,15 @@ nav ul li:hover {
 
 /* Articles */
 article {
-    margin: 5% 3%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 article section {
     margin: 1% 0;
 }
 article header {
     margin: 2% 0 1% 0;
+    color: #000000;
 }
 article aside {
     float: right;
@@ -105,6 +110,7 @@ article aside .imgtext {
     font-style: italic;
     text-align: right;
     width: 100%;
+    color: #000000;
 }
 article aside img {
     display: block;
@@ -112,7 +118,7 @@ article aside img {
     width: 100%;
 }
 article footer {
-    color: #bbb;
+    color: #707070;
     font-size: 90%;
     clear: both;
 }
@@ -158,22 +164,25 @@ article section.formfields {
     display: grid;
     grid-template-columns: 30% auto;
 }
-article section.field input,textarea {
+article section.field input,textarea,button {
     width: 100%;
     padding: 1%;
     border-bottom: solid lightgrey;
     background-color: inherit;
-    color: white;
+    color: #444444;
     resize: none;
 }
-article section.field input:focus,textarea:focus {
-    border-bottom: solid white;
+article section.field input:focus,textarea:focus,button:focus {
+    border-bottom: solid #AAAAAA;
 }
-article section.field input[type=submit] {
-    border: solid lightgrey;
+article section.field button {
+    border: solid #AAAAAA;
 }
-article section.field input[type=submit]:hover {
-    background-color: rgba(255, 255, 255, 0.15);
+article section.field button:hover {
+    background-color: #AAAAAA;
+}
+article form fieldset legend {
+    display: inherit;
 }
 
 /* COOKIES: JS is dus niet toegestaan, daarom deze CSS trucage :). */
@@ -185,8 +194,8 @@ article section.field input[type=submit]:hover {
 }
 #cookie label {
     width: 100%;
-    background-color: #000c9a;
-    color: #fff;
+    background-color: #2699FB;
+    color: #FFFFFF;
     position: fixed;
     bottom: 0;
     text-align: center;
@@ -196,4 +205,30 @@ article section.field input[type=submit]:hover {
 #cookie label u {
     display: block;
     margin: 1%;
+}
+
+/* Responsive */
+@media only screen and (min-width: 800px) {
+
+    article {
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+
+}
+@media only screen and (min-width: 600px) and (max-width: 799px) {
+
+    article {
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+
+}
+@media only screen and (max-width: 599px){
+
+    article {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
 }
