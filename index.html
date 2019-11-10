@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="NL">
-
-<!--    TODO:                   -->
 <!--    - Sport: Jiu Jitsu      -->
 <!--    - Main: Haarlem         -->
 <!--    - Secondary: Parkwijk   -->
@@ -11,7 +9,7 @@
     <meta charset="UTF-8">
     <title>BJJ Haarlem</title>
     <meta name="author" content="Jolle Snaas">
-    <meta name="keywords" content="Jiu Jitsu, Haarlem, Parkwijk"/>
+    <meta name="keywords" content="JiuJitsu, Haarlem, Parkwijk, SintBavokerk, Reinaldapark, Teakwondo, Sportschool, Karate, Mudo">
     <meta name="description" content="Jiu Jitsu in Haarlem en in de Parkwijk.">
     <link rel="stylesheet" type="text/css" href="css/opmaak.css">
 
@@ -22,19 +20,22 @@
 
     <nav>
         <ul>
-            <li>
+            <li class="hamburger">
+                <a href="#">&#9776;</a>
+            </li>
+            <li class="menuitem">
                 <a href="#thuis">Thuis</a>
             </li>
-            <li>
+            <li class="menuitem">
                 <a href="#maincontent">Haarlem</a>
             </li>
-            <li>
+            <li class="menuitem">
                 <a href="#secondarycontent">Parkwijk</a>
             </li>
-            <li>
+            <li class="menuitem">
                 <a href="#sportcontent">Sport</a>
             </li>
-            <li>
+            <li class="menuitem">
                 <a href="#contact">Contact</a>
             </li>
         </ul>
@@ -43,11 +44,20 @@
     <header id="thuis">
 
         <section>
-            <h1>Haarlem</h1>
-            <h2>De Parkwijk Haarlem en Sporten in Haarlem.</h2>
+            <h1 class="cursivefont">Haarlem</h1>
+            <h2 class="cursivefont">De Parkwijk Haarlem en Sporten in Haarlem.</h2>
         </section>
 
     </header>
+
+    <section class="bgvideo">
+        <video autoplay="autoplay" muted="muted" loop>
+            <source src="img/running_video.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section class="bgvideooverlay">
+    </section>
 
     <article id="maincontent">
 
@@ -60,7 +70,7 @@
         </section>
 
         <section class="imgholder">
-            <img src="img/haarlempanorama.jpg" alt="De Stad Haarlem">
+            <img src="img/haarlempanorama.jpg" alt="Panorama vanaf het water van de Stad Haarlem" title="Haarlem vanaf het water">
         </section>
 
         <section>
@@ -79,7 +89,7 @@
         </section>
 
         <section class="imgholder">
-            <img src="img/kerkenmarkt.jpg" alt="Sint-Bavokerk en de Grote Markt">
+            <img src="img/kerkenmarkt.jpg" alt="Sint-Bavokerk en de Grote Markt genomen staande op de markt" title="Sint-Bavokerk en de Grote Markt">
         </section>
 
         <footer>
@@ -93,6 +103,13 @@
         <header>
             <h2>Parkwijk</h2>
         </header>
+
+        <aside>
+            <img src="img/ParkwijkkaartCBS.png" alt="Parkwijk kaart in Haarlem" title="Kaart Parkwijk">
+            <p class="imgtext">Kaart door CBS</p>
+            <img src="img/JurEngelchorZuiderpolder.JPG" alt="Sharpevillestraat in de Zuiderpolder" title="Sharpevillestraat, Zuiderpolder">
+            <p class="imgtext">Sharpevillestraat door Jur Engelchor</p>
+        </aside>
 
         <section>
             <p>De Parkwijk is een wijk in is wijk in Oost Haarlem. De wijk is vrij nieuw (de eerste huizen zijn in 1950 gebouwd), er is dus veel nieuwbouw te vinden. Sinds 2016 is de Parkwijk geen buurt meer maar een wijk. </p>
@@ -120,7 +137,7 @@
 
         <section>
             <h4>Winkels</h4>
-            <p>Midden in de Parkwijk bevind het Prinses Beatrixplein zich. Om dit plein liggen veel winkels; meerdere supermarkten, een aantal restaurantjes en cafés, een bakkerij, slager en verswinkel. Kortom genoeg te doen! Wil je naar een restaurantje toe? Dan is het vaak een goede keuze om het Centrum van Haarlem in te gaan, hier is namelijk veel meer keuze.</p>
+            <p>Midden in de Parkwijk bevind het Prinses Beatrixplein zich. Om dit plein liggen veel winkels; meerdere supermarkten, een aantal restaurantjes en caf&eacute;s, een bakkerij, slager en verswinkel. Kortom genoeg te doen! Wil je naar een restaurantje toe? Dan is het vaak een goede keuze om het Centrum van Haarlem in te gaan, hier is namelijk veel meer keuze.</p>
         </section>
 
         <section>
@@ -131,7 +148,6 @@
 
         <footer>
             <p>* Telling 2017</p>
-            <p>Afbeeldingen gepubliseerd onder de ...  licentie door ... .</p>
         </footer>
 
     </article>
@@ -143,9 +159,9 @@
         </header>
 
         <aside>
-            <img src="img/FujiyoshidaJapan.jpg" alt="Fujiyoshida, Japan">
+            <img src="img/FujiyoshidaJapan.jpg" alt="Tempel in Fujiyoshida Japan" title="Fujiyoshida, Japan">
             <p class="imgtext">Fujiyoshida, Japan</p>
-            <img src="img/juijitsu.jpg" alt="Jui Jitsu">
+            <img src="img/juijitsu.jpg" alt="Twee mensen doen Jui Jitsu" title="Jui Jitsu">
         </aside>
 
         <section>
@@ -179,12 +195,12 @@
 
             <aside>
                 <a href="#referalcontent">
-                    <img src="img/JoshuaJamiasTaewondo.jpg">
+                    <img src="img/JoshuaJamiasTaewondo.jpg" alt="Twee mensen doen aan Taewondo" title="Taewondo, Joshua Jamias">
                 </a>
             </aside>
 
             <section>
-                <h4>HwaRang Dragon Taekwondo & Gracie Jiu Jitsu</h4>
+                <h4>HwaRang Dragon Taekwondo &amp; Gracie Jiu Jitsu</h4>
                 <p>Deze school geeft Teakwondo, (Brazilian) Jui Jitsu en Mudo. De school zit op twee plekken; in Haarlem en Heemstede.</p>
                 <a href="#referalcontent">Lees meer</a>
             </section>
@@ -198,14 +214,14 @@
 
             <aside>
                 <a href="https://www.kenamju.nl">
-                    <img src="img/JohnAranoFitness.jpg">
+                    <img src="img/JohnAranoFitness.jpg" alt="Vrouw doet aan Weightlifting" title="Fitness, John Arano">
                 </a>
             </aside>
 
 
             <aside>
                 <a href="https://www.kravmaga-noordholland.nl">
-                    <img src="img/ThaoLeHoangKarata2.jpg">
+                    <img src="img/ThaoLeHoangKarata2.jpg" alt="Man maakt Karate beweging" title="Karata, Thao Le Hoang">
                 </a>
             </aside>
 
@@ -224,14 +240,14 @@
 
             <aside>
                 <a href="https://www.ryounkai.nl">
-                    <img src="img/ThaoLeHoangKarata3.jpg">
+                    <img src="img/ThaoLeHoangKarata3.jpg" alt="Man maakt Karate beweging" title="Karata, Thao Le Hoang">
                 </a>
             </aside>
 
 
             <aside>
                 <a href="https://www.five21.nl">
-                    <img src="img/JonathanBorbaFitness.jpg">
+                    <img src="img/JonathanBorbaFitness.jpg" alt="Vrouw sport in Sportschool" title="Fitness, Jonathan Borba">
                 </a>
             </aside>
 
@@ -250,14 +266,14 @@
 
             <aside>
                 <a href="https://www.trainingscentrumhelena.nl">
-                    <img src="img/PenguinuhhGym.jpg">
+                    <img src="img/PenguinuhhGym.jpg" alt="Man Gymt" title="Gym, Penguinuhh">
                 </a>
             </aside>
 
 
             <aside>
                 <a href="http://www.olympiahaarlem.nl">
-                    <img src="img/JannikSkornaSoccer.jpg">
+                    <img src="img/JannikSkornaSoccer.jpg" alt="Voetbal" title="Soccer, Jannik Skorna">
                 </a>
             </aside>
 
@@ -276,14 +292,14 @@
 
             <aside>
                 <a href="http://www.krassport.nl">
-                    <img src="img/LaimanNungSkating.jpg">
+                    <img src="img/LaimanNungSkating.jpg" alt="Kunstschaatsen" title="Skating, Laiman Nung">
                 </a>
             </aside>
 
 
             <aside>
                 <a href="https://www.presport.nl">
-                    <img src="img/DiegoRosaDance.jpg">
+                    <img src="img/DiegoRosaDance.jpg" alt="Vrouw Danst" title="Dance, Diego Rosa">
                 </a>
             </aside>
 
@@ -302,14 +318,14 @@
 
             <aside>
                 <a href="https://www.hchaarlem.nl">
-                    <img src="img/JeffreyFLinHockey.jpg">
+                    <img src="img/JeffreyFLinHockey.jpg" alt="Vrouw speelt Hockey" title="Hockey, Jeffrey F Lin">
                 </a>
             </aside>
 
 
             <aside>
                 <a href="https://www.tsoverhout.nl">
-                    <img src="img/MoisesAlexTennis.jpg">
+                    <img src="img/MoisesAlexTennis.jpg" alt="Tennis Opslag" title="Tennis, Moises Alex">
                 </a>
             </aside>
 
@@ -330,7 +346,7 @@
     <article id="referalcontent">
 
         <header>
-            <h2>Meer over HwaRang Dragon Taekwondo & Gracie Jiu Jitsu</h2>
+            <h2>Meer over HwaRang Dragon Taekwondo &amp; Gracie Jiu Jitsu</h2>
         </header>
 
         <section>
@@ -339,7 +355,9 @@
         </section>
 
         <section class="imgholder">
-            <img src="img/taekwonrooster.png" alt="Rooster Taekwon">
+            <a href="https://www.taekwon.nl/brazilian-jiu-jitsu/">
+                <img src="img/taekwonrooster.png" alt="Rooster Taekwon" title="Rooster Teakwon">
+            </a>
         </section>
 
         <footer>
@@ -355,7 +373,7 @@
             <fieldset>
 
                 <legend>
-                    <h2>Contact</h2>
+                    Contact
                 </legend>
 
 
@@ -411,7 +429,7 @@
     <footer id="footer">
 
         <section>
-            <p class="title">Pagina's</p>
+            <p class="title">Pagina&apos;s</p>
             <ul>
                 <li>
                     <a href="#thuis">Thuis</a>

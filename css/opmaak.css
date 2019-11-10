@@ -3,6 +3,9 @@ Opmaak voor WebMarkup
 Jolle (644546)
 */
 
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Baloo+Bhai&display=swap');
+
 /* Standaard Browser troep weg. */
 * {
     margin: 0;
@@ -30,6 +33,11 @@ body {
 }
 h1,h2,h3,h4,h5 {
     color: #000000;
+    font-family: 'Baloo Bhai', "Arial Black", Arial, sans-serif;
+}
+.cursivefont {
+    color: #FFFFFF;
+    font-family: 'Abril Fatface', "American Typewriter", cursive;
 }
 
 /* Navigatie */
@@ -43,10 +51,10 @@ nav {
 }
 nav ul li {
     display: inline-block;
-    font-size: 20px;
+    font-size: 125%;
     text-align: center;
-    padding: 10px 0;
-    width: 19%;
+    padding: 1% 0;
+    width: 18%;
 }
 nav ul li:hover {
     background-color: #AAAAAA;
@@ -56,16 +64,10 @@ nav ul li:hover {
 #thuis {
     width: 100%;
     text-align: center;
-    background-color: #0010dd;
-    padding: 15% 0;
+    padding: 12% 0;
+    background-color: #444444;
 }
-#thuis h1 {
-    font-size: 6vw;
-    /*TODO: vervangen voor %*/
-}
-#thuis h2 {
-    font-size: 2.5vw;
-}
+/* fontsizes in de resposive */
 
 /* Footer */
 #footer {
@@ -138,9 +140,6 @@ article section#sportclubs {
     display: grid;
     grid-template-columns: 33% 33% auto;
 }
-article section#sportclubs > section {
-    margin: 40% 0 0 0;
-}
 article section#sportclubs > aside {
     width: 90%;
 }
@@ -165,7 +164,7 @@ article section.formfields {
     grid-template-columns: 30% auto;
 }
 article section.field input,textarea,button {
-    width: 100%;
+    width: 98%;
     padding: 1%;
     border-bottom: solid lightgrey;
     background-color: inherit;
@@ -177,12 +176,15 @@ article section.field input:focus,textarea:focus,button:focus {
 }
 article section.field button {
     border: solid #AAAAAA;
+    float: right;
+    width: 75%;
 }
 article section.field button:hover {
     background-color: #AAAAAA;
 }
 article form fieldset legend {
-    display: inherit;
+    color: #000000;
+    font-size: 150%;
 }
 
 /* COOKIES: JS is dus niet toegestaan, daarom deze CSS trucage :). */
@@ -207,28 +209,111 @@ article form fieldset legend {
     margin: 1%;
 }
 
+/* Background video */
+section.bgvideo {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -100;
+}
+
+section.bgvideo video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+section.bgvideooverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -90;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
 /* Responsive */
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1280px) {
 
     article {
         margin-left: 12%;
         margin-right: 12%;
     }
 
+    #thuis h1 {
+        font-size: 800%;
+    }
+    #thuis h2 {
+        font-size: 200%;
+    }
+
+    article section#sportclubs > section {
+        margin: 40% 0 0 0;
+    }
+
+    nav ul li.hamburger {
+        display: none;
+    }
+
 }
-@media only screen and (min-width: 600px) and (max-width: 799px) {
+@media only screen and (min-width: 481px) and (max-width: 1278px) {
 
     article {
         margin-left: 7%;
         margin-right: 7%;
     }
 
+    #thuis h1 {
+        font-size: 500%;
+    }
+    #thuis h2 {
+        font-size: 125%;
+    }
+
+    article section#sportclubs > section {
+        margin: 10% 0 0 0;
+    }
+
+    nav ul li.menuitem {
+        display: none; /* Om het mobile menu te zien moet deze weg met js */
+    }
+    nav ul li {
+        width: 100%;
+    }
+
 }
-@media only screen and (max-width: 599px){
+@media only screen and (max-width: 480px){
 
     article {
         margin-left: 4%;
         margin-right: 4%;
+    }
+
+    #thuis h1 {
+        font-size: 300%;
+    }
+    #thuis h2 {
+        font-size: 100%;
+    }
+
+    article section#sportclubs > section {
+        margin: 10% 0 0 0;
+    }
+
+    nav ul li.menuitem {
+        display: none; /* Om het mobile menu te zien moet deze weg met js */
+    }
+    nav ul li {
+        width: 100%;
     }
 
 }
